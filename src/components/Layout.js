@@ -15,7 +15,8 @@ export default function Layout({ title, children }) {
         title={"Writer Artist Portfolio Site: " + (title ? title : "Untitled")}
         description="This is a demo for a writer artist portfolio site. Will have integration with wordpress and other popular utils to make site upkeep effortless."
         openGraph={{
-          title: "Writer Artist Portfolio Site" + (title ? title : "Untitled"),
+          title:
+            "Writer Artist Portfolio Site: " + (title ? title : "Untitled"),
           description:
             "This is a demo for a writer artist portfolio site. Will have integration with wordpress and other popular utils to make site upkeep effortless.",
           images: [
