@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { navLinks } from "@/lib/navlinks";
-import { useTheme } from "next-themes";
+import DarkModeButton from "@/components/DarkModeButton";
 export default function NavBar() {
-  const { theme, setTheme } = useTheme();
-
   return (
     <>
       <nav className="container-fluid">
@@ -23,13 +21,7 @@ export default function NavBar() {
         </ul>
         <ul>
           <li>
-            <button
-              class="contrast theme-switcher"
-              aria-label="Turn off dark mode"
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              Turn off dark mode
-            </button>
+            <DarkModeButton />
           </li>
         </ul>
       </nav>

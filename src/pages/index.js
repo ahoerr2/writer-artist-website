@@ -4,12 +4,17 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
 import Layout from "@/components/Layout";
+import Typewriter from "@/components/Typewriter";
 
 export default function Home({ title }) {
   return (
     <Layout title={title}>
-      <h1 className="text-center">Welcome to my app!</h1>
-      <p className="text-center">This is the home page.</p>
+      <h1 className="text-center">Writer Website</h1>
+      <p className="text-center">
+        <Typewriter reverseAfter={0}>
+          Add a personal description about yourself!
+        </Typewriter>
+      </p>
     </Layout>
   );
 }
